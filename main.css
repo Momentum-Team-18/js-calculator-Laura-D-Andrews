@@ -55,14 +55,14 @@ body {
                 inset -3px -3px 9px #555B6E;
 }
 
-.buttonNum {
+.button {
     color: white; 
 }
 
-.buttonOp .buttonEq {
-    color: #555B6E; 
-    font-weight: 700;
-}
+/* .button:hover {
+    opacity: 1.0
+   
+} */
 
 
 
