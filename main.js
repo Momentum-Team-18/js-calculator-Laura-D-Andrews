@@ -1,5 +1,15 @@
-// #clear - works different?
-// #display - works different? 
-// .button-num, 0-9, decimal - work the same
-// .button-op, /, x, -, + work the same?
-// = works differently???
+
+let displayScreen = document.querySelector('#display')
+console.log(displayScreen)
+
+let buttonClear = document.querySelector('#clear')
+console.log(buttonClear)
+
+let buttonNumbers = document.querySelectorAll(".buttonNum")
+console.log(buttonNumbers)
+
+let buttonOperators = document.querySelectorAll(".buttonOp")
+console.log(buttonOperators)
+
+let buttonEqual = document.querySelector("#buttonEq")
+console.log(buttonEqual)

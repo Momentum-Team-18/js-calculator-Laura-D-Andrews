@@ -11,7 +11,7 @@ body {
     padding: 50px; 
     margin: 0 auto; 
 }
-.grid-container {
+.gridContainer {
     display: grid; 
     grid-template-columns: repeat(4, 80px);
     grid-template-rows: repeat(5, 80px);
@@ -22,7 +22,7 @@ body {
     background-color: #2B2D2F; 
 }
 
-.grid-card {
+.gridCard {
     display: flex; 
     align-items: center;
     justify-content: center; 
@@ -55,11 +55,11 @@ body {
                 inset -3px -3px 9px #555B6E;
 }
 
-.button-num {
+.buttonNum {
     color: white; 
 }
 
-.button-op {
+.buttonOp .buttonEq {
     color: #555B6E; 
     font-weight: 700;
 }
