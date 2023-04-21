@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:wght@500&display=swap');
+
+
+* {
+    font-family: Montserrat; 
+    font-weight: 400; 
+    font-size: 24px; 
+}
+
+body {
+    padding: 50px; 
+    margin: 0 auto; 
+}
+.gridContainer {
+    display: grid; 
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 80px);
+    width: 320px; 
+    box-shadow: 0 3px 10px 5px rgb(0 0 0 / 0.9); 
+    border: 3px solid #FFD6BA;
+    border-radius: 0.30em; 
+    background-color: #2B2D2F; 
+}
+
+.gridCard {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    border: 2px solid #555B6E;
+    border-radius: 0.7em; 
+    box-shadow: inset 3px 3px 15px #555B6E,
+                inset -3px -3px 15px #555B6E;
+    background-color: #89B0AE;
+   
+} 
+
+#clear {
+    color: #555B6E;
+    font-weight: 700;
+}
+
+#display {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    border: 4px solid  #f8a974; 
+    color: #555B6E;
+    border-radius: 0.20em; 
+    background-color: #C7C7C7;
+    box-shadow: inset 3px 3px 9px #555B6E,
+                inset -3px -3px 9px #555B6E;
+}
+
+.buttonNum {
+    color: white; 
+}
+
+.buttonOp .buttonEq {
+    color: #555B6E; 
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* #9E2A2B; */
+/* 85878F grey */
+/* 556E68 green blue */
