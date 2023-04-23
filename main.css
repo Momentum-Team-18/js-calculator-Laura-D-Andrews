@@ -6,7 +6,6 @@
     font-weight: 400; 
     font-size: 24px; 
 }
-
 body {
     padding: 50px; 
     margin: 0 auto; 
@@ -21,31 +20,20 @@ body {
     border-radius: 0.30em; 
     background-color: #2B2D2F; 
 }
-
 .gridCard {
     display: flex; 
-    align-items: center;
-    justify-content: center; 
+    align-items: center; /*aligns cards in center of gridcontainer, 
+    otherwise overflows edges of gridcontainer */
     border: 2px solid #555B6E;
-    border-radius: 0.7em; 
-    box-shadow: inset 3px 3px 15px #555B6E,
-                inset -3px -3px 15px #555B6E;
-    background-color: #89B0AE;
-   
+    border-radius: 0.7em;   
 } 
-
-#clear {
-    color: #555B6E;
-    font-weight: 700;
-}
-
 #display {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1; 
     display: flex; 
-    align-items: center;
+    align-items: center; 
     justify-content: center; 
     border: 4px solid  #f8a974; 
     color: #555B6E;
@@ -55,8 +43,19 @@ body {
                 inset -3px -3px 9px #555B6E;
 }
 
-.button {
+.button, #buttonClear, #buttonEq {
     color: white; 
+    display: flex; 
+    flex: auto 1 1; 
+    text-align: center;
+    align-items: center; /*aligns text in center of grid card container - horizontally */
+    justify-content: center;  /* puts text in center of grid card container - vertically */ 
+    height: 100%;
+    border-radius: 0.7em; 
+    border: 2px solid #555B6E;
+    box-shadow: inset 3px 3px 15px #555B6E,
+                inset -3px -3px 15px #555B6E;
+    background-color: #89B0AE;
 }
 
 /* .button:hover {

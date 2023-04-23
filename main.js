@@ -1,39 +1,40 @@
 
-let displayScreen = document.querySelector('#display')
-console.log(displayScreen)
+// definitions
 
 let buttonClear = document.querySelector('#buttonClear')
-console.log(buttonClear)
+
 
 let buttons = document.querySelectorAll(".button")
-console.log(buttons)
+
 
 let buttonEqual = document.querySelector("#buttonEq")
-console.log(buttonEqual)
 
-gridCard.addEventListener('click', (event) => {
-    let newDisplay = document.createTextNode(${event}) 
 
-    console.log(${event});
-})
+let displayScreen = document.querySelector('#display')
 
+let calculate = function(formula) {
+    let result = eval(formula)
+    displayScreen.value = result
+}
+// event listeners 
 
 buttonClear.addEventListener("click", (event) => {
-    console.log(event.target.innerText); 
-    displayScreen.innerText = event.target.innerText; 
+    displayScreen.value = "" //empty string to clear
 })
-// displays in console
-
-for (let button of buttons) {
-    button.addEventListener("click", (event) => {
-        console.log(event.target.innerText); 
-        displayScreen.innerText = event.target.innerText;
-    })
-}
-// displays in console 
 
 buttonEqual.addEventListener("click", (event) => {
-    console.log(event.target.innerText);
-    displayScreen.innerText = event.target.innerText; 
+    // console.log(event.target.innerText)
+    calculate(displayScreen.value)
 })
-// displays in console
+
+for (let button of buttons){
+    button.addEventListener('click', (event) => {
+        displayScreen.value+=button.innerText // displayScreen.value = '', so here '' = + button.innerText
+    })
+}
+
+// function
+
+// declaring a parameter in the future so you can give it an input and it'll give you an output
+
+
