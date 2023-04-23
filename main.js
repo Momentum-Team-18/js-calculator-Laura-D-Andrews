@@ -12,29 +12,29 @@ let buttonEqual = document.querySelector("#buttonEq")
 
 let displayScreen = document.querySelector('#display')
 
-let calculate = function(formula) {
-    let result = eval(formula)
-    displayScreen.value = result
-}
+let mathProblem = ''
+
+
 // event listeners 
 
 buttonClear.addEventListener("click", (event) => {
-    displayScreen.value = "" //empty string to clear
-})
-
-buttonEqual.addEventListener("click", (event) => {
-    console.log(event.target.innerText)
-    calculate(displayScreen.value)
+    displayScreen.value = ''
+    console.log(displayScreen.value)
 })
 
 for (let button of buttons){
     button.addEventListener('click', (event) => {
-        displayScreen.value+=button.innerText // displayScreen.value = '', so here '' = + button.innerText
+        displayScreen.value+=button.innerText
+        console.log(button.innerText)
     })
 }
+buttonEqual.addEventListener("click", (event) => {
+    console.log(event.target.innerText)
+    let answer = math.evaluate(displayScreen.value) 
+    console.log(answer)
+    displayScreen.value = answer
+}) 
 
-// function
 
-// declaring a parameter in the future so you can give it an input and it'll give you an output
 
 
