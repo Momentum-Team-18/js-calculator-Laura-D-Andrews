@@ -23,7 +23,7 @@ buttonClear.addEventListener("click", (event) => {
 })
 
 buttonEqual.addEventListener("click", (event) => {
-    // console.log(event.target.innerText)
+    console.log(event.target.innerText)
     calculate(displayScreen.value)
 })
 
