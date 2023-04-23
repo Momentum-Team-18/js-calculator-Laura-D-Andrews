@@ -12,7 +12,6 @@ let buttonEqual = document.querySelector("#buttonEq")
 
 let displayScreen = document.querySelector('#display')
 
-let mathProblem = ''
 
 
 // event listeners 
